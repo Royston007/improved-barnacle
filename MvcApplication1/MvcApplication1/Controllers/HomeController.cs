@@ -24,6 +24,21 @@ namespace MvcApplication1.Controllers
 
         public ActionResult GetDetails()
         {
+            if (lst == null)
+            {
+                lst = new List<Employee>
+                {
+                    new Employee
+                    {
+                        EmployeeId = 3107,
+                        EmployeeName = "Royston",
+                        ProjectCode = 92741,
+                        Designation = "Manager",
+                        Active= "Y",
+
+                    }
+                };
+            }
             ViewBag.Content = lst;
             return PartialView("GetDetails");
         }
