@@ -46,3 +46,7 @@ if __name__ == '__main__':
     print(int(request['start']),start)
     mainMethod(int(request['step']),start)
 
+#set FLASK_APP=Josephus
+#set FLASK_ENV=development
+#flask run
+#http://localhost:5000/?step=175&start=1
